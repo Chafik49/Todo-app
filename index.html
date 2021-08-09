@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+   integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"
+   referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="work-zone">
+            <header>
+                <div class="todo-title">todo</div>
+                <div class="dark-light">
+                  <img src="./images/icon-sun.svg" class="sun" alt="">
+                  <img src="./images/icon-moon.svg" class="moon" alt="">
+                </div>
+              </header>
+              <div class="input-zone">
+                <div class="type-zone">
+
+                  <div class="icon1"></div>
+
+                  <div class="input-field">
+                    <input type="text" class="input" id="input" placeholder="Create a new todo...">
+                  </div>
+                </div>
+              
+                <div class="add" id="add">
+                  <i class="fas fa-plus"></i>
+                </div>
+
+              </div>
+              <div class="main">
+                  <div class="todo-zone">
+                      <div class="allItems page" id="allItems"></div>
+                  </div>
+                  <div class="completedItems page">
+                    
+                  </div>
+
+                  <div class="activeItems page">          
+                  </div>
+
+                  <div class="tool-bar">
+                    <div class="items-left" id="itemsLeft">No items left</div>
+                    <div class="specific-todo">
+                      <span  class="active tool" id="all">All</span>
+                      <span class="tool" id="activeBtn">Active</span>
+                      <span class="tool" id="completedBtn">Completed</span>
+                    </div>
+                    <div class="clear-completed">
+                      Clear Completed
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
