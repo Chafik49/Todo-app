@@ -199,11 +199,9 @@ function completedPage(){
         removeFall();
         completeBtn.classList.add("active");
         checkedItems.forEach((item)=>{
-            if(!item.classList.contains("done")){
-                item.classList.add("fall");
-                item.addEventListener("transitionend" , function(){
-                     item.classList.add("doneTwo");
-                });
+            if(!item.classList.contains("done")){          
+                item.classList.add("doneTwo");
+                
             }else{
                 item.classList.remove("doneTwo");
             }
@@ -220,11 +218,9 @@ function activePage(){
         removeFall();
         activeBtn.classList.add("active");
         activeItems.forEach((item)=>{       
-            if(item.classList.contains("done")){
-                item.classList.add("fall");
-                item.addEventListener("transitionend" , function(){
-                     item.classList.add("doneTwo");
-                });
+            if(item.classList.contains("done")){        
+                item.classList.add("doneTwo");
+                
             }else{
                 item.classList.remove("doneTwo");
             }
